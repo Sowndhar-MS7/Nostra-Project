@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nostra</title>
+
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="">
+
+  <!--Navbar-->
+
+  <nav id="navbar"class="bg-wheatshadow-xl  sticky top-0 z-10 shadow-md  ">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      
+      <!-- Logo -->
+      <div class="text-2xl font-bold text-black">Nostra</div>
+
+       <div>
+            <input type="text" placeholder="What are you looking for.." class="input  flex md:flex hidden ">
+        </div>
+      
+      <!-- Menu (Desktop) -->
+      <ul class="hidden md:flex space-x-8 text-gray-700 font-medium">
+        <li><a href="./index.html" class="hover:text-blue-600">Home</a></li>
+        <li><a href="./collection.html" class="hover:text-blue-600">Collection</a></li>
+        <li><a href="./contact.html" class="hover:text-blue-600">Contact</a></li>
+        <li>
+          <a href="./signin.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+            Sign in
+          </a>
+        </li>
+      </ul>
+
+      <!-- Mobile Menu Icon -->
+      <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+        <!-- SVG Hamburger -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+      <a href="./index.html" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+      <a href="./collection.html" class="block py-2 text-gray-700 hover:text-blue-600">Collection</a>
+      <a href="./contact.html" class="block py-2 text-gray-700 hover:text-blue-600">Contact</a>
+      <a href="./signin.html" class="block py-2 bg-blue-600 text-white rounded-lg px-4 py-2 mt-2 hover:bg-blue-700">Sign in</a>
+    </div>
+  </nav>
+
+  <script>
+    // Toggle Mobile Menu
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+
+   <div class="p-2">
+            <input type="text" placeholder="What are you looking for.." class=" input md:hidden">
+        </div>
+      
+
+
+  <!--Header-->
+
+  <div id="header">
+    <section class="p-4  flex border ">
+      <div>
+        <p>Nostra offers if you are a first purchaser 50% offers on Branded shirts</p>
+        <h2 class=" text-2xl mb-5">
+          Personal suggestion also provide with specialist stylisher
+
+        </h2>
+        <div class="hbtn">
+          <button class="bg-transparent"><a  href="./collection.html">Shop Now</a></button>
+
+        </div>
+        <p class="mt-5">All Branded available at your door steps | 10k+ Clients✔️</p>
+        <p>Shop smart, live better 🛒</p>
+        <p>Style that speaks louder than words🛍️</p>
+        <p>
+          Big Sale – 50% OFF 🛍️ | Limited Time ⏰ | Free Shipping 🚚
+        </p>
+      </div>
+
+
+      <!--Section-->
+      
+      <div class="hidden md:block p-5">
+        <img src="./Images/Header/hphoto1.png" alt="Image" class="w-40">
+      </div>
+      <div class="hidden md:block p-5">
+        <img src="./Images/Header/hphoto2.png" alt="Image" class="w-40">
+      </div>
+      <div class="hidden md:block p-5">
+        <img src="./Images/Header/hphoto3.png" alt="Image" class="w-40">
+      </div>
+  </div>
+
+  <section class="p-4 text-center">
+    <p class="text-3xl p-5 font-bold">Sections</p>
+    <div id="collection" class="grid grid-cols-3">
+      <div class="p-3">
+        <img src="./Images/Maincollections/maincollection1.png" alt="" class="inline">
+        <p class="p-3 text-2xl hover:text-blue-600 "><a href="./collection.html">Sarees</a></p>
+      </div>
+
+      <div class="p-3">
+        <img src="./Images/Maincollections/maincollection2.png" alt="" class="inline">
+        <p class="p-3 text-2xl  hover:text-blue-600"><a href="./collection.html">kurtas</a></p>
+      </div>
+
+      <div class="p-3">
+        <img src="./Images/Maincollections/maincollection3.png" alt="" class="inline">
+        <p class="p-3 text-2xl  hover:text-blue-600"><a href="./collection.html">T-shirts</a> </p>
+      </div>
+
+      <div class="p-3">
+        <img src="./Images/Maincollections/maincollection7.png" alt="" class="inline">
+        <p class="p-3 text-2xl  hover:text-blue-600"><a href="./collection.html">Shirts</a></p>
+      </div>
+
+      <div class="p-3">
+        <img src="./Images/Maincollections/maincollection5.png" alt="" class="inline">
+        <p class="p-3 text-2xl  hover:text-blue-600"><a href="./collection.html">MensT-shirts</a> </p>
+      </div>
+
+      <div class="p-3">
+        <img src="./Images/Maincollections/maincollection6.png" alt="" class="inline">
+        <p class="p-3 text-2xl  hover:text-blue-600"><a href="./collection.html">Kids Dress</a></p>
+      </div>
+
+    </div>
+  </section>
+  
+    </section>
+
+    <!--Customer Review-->
+    <section class=" p-5">
+        <div>
+            <h1 class="font-bold text-3xl text-center mb-6">Customer Reviews</h1>
+            <div class="bg-white text-black
+             p-5 border border-black m-6">
+              <p class="text-blue-300">👩‍🧑 Review 1 – Priya S. (College Student)
+⭐️⭐️⭐️⭐️⭐️</p>
+                <p>
+"I absolutely loved shopping here! The collection is super trendy and affordable, perfect for college students like me. I bought a floral dress for my farewell, and it fit perfectly without any alterations. The staff was also very sweet and helped me pick the right size. I’ll definitely come back for more.</p>
+                
+            </div>
+             <div>
+         
+            <div class="bg-white text-black
+             p-5 border border-black m-6">
+              <p class="text-blue-300">👨 Review 2 – Rahul K. (Working Professional)
+⭐️⭐️⭐️⭐️</p>
+                <p>
+"The shop has a good variety of formal and casual dresses. I bought one for my wife’s birthday, and she loved the quality. Prices are slightly on the higher side, but the material and stitching make it worth it. Customer service could be a bit quicker during rush hours, but overall a nice experience."</p>
+                
+            </div>
+          <div>
+         
+            <div class="bg-white text-black
+             p-5 border border-black m-6">
+              <p class="text-blue-300">👩‍🦳 Review 3 – Meena A. (Homemaker)
+⭐️⭐️⭐️⭐️⭐️</p>
+                <p>
+
+"This is one of the best dress shops I’ve visited. The fabrics are very comfortable and perfect for daily wear as well as occasions. I really appreciate that they also have traditional designs along with modern styles. The shop is well-organized, and billing was hassle-free. Highly recommended for family shopping."</p>
+                
+            </div>
+         
+         
+            </div>
+        </div>
+    </section>
+
+    <!--Feedback-->
+    <section class="text-center">
+        <h1 class="text-3xl font-bold mt-5 text-center text-2xl">Feedback</h1>
+        <p>Submit your feedback to improve our collection and ourself </p>
+        <input type="text" class="border border-black p-2 m-3" style="width: 80%;"><br>
+        <button class="bg-black text-white p-3 m-1 underline">Submit</button>
+    </section>
+
+    <!--Footer-->
+    <section class="bg-blue-300 p-10 flex flex-col gap-5 mt-5">
+        <h1 class="text-4xl font-bold">Nostra</h1>
+        <p class="text-2xl">About Us</p>
+<p>Elegance Dress Shop brings you stylish collections with a perfect blend of modern trends and traditional charm. We aim to make fashion comfortable, affordable, and elegant for everyone.
+        </p>
+        <p>Contact Us</p>
+<p>📍 123 Fashion Street, Chennai, India</p>
+<p>📞 +91 98765 43210</p>
+<p>📧 support@nostradress.com</p>
+        <p>@ 2020 Nostra.com</p>
+    </section>
+
+        
+
+  
+</body>
+
+</html>

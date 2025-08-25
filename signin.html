@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nostra</title>
+
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!--Navbar-->
+
+  <nav id="navbar"class="bg-wheatshadow-xl sticky top-0 z-10 shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      
+      <!-- Logo -->
+      <div class="text-2xl font-bold text-black">Nostra</div>
+
+       <div>
+            <input type="text" placeholder="What are you looking for.." class="input  flex md:flex hidden ">
+        </div>
+      
+      <!-- Menu (Desktop) -->
+      <ul class="hidden md:flex space-x-8 text-gray-700 font-medium">
+        <li><a href="./index.html" class="hover:text-blue-600">Home</a></li>
+        <li><a href="./collection.html" class="hover:text-blue-600">Collection</a></li>
+        <li><a href="./contact.html" class="hover:text-blue-600">Contact</a></li>
+        <li>
+          <a href="./signin.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+            Sign in
+          </a>
+        </li>
+      </ul>
+
+      <!-- Mobile Menu Icon -->
+      <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+        <!-- SVG Hamburger -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+      <a href="./index.html" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+      <a href="./collection.html" class="block py-2 text-gray-700 hover:text-blue-600">Collection</a>
+      <a href="./contact.html" class="block py-2 text-gray-700 hover:text-blue-600">Contact</a>
+      <a href="./signin.html" class="block py-2 bg-blue-600 text-white rounded-lg px-4 py-2 mt-2 hover:bg-blue-700">Sign in</a>
+    </div>
+  </nav>
+
+  <script>
+    // Toggle Mobile Menu
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script><br><br><br>
+
+<div class="w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800 ">
+    <div class="px-6 py-4">
+        <div class="flex justify-center mx-auto">
+            <h1><a href="./index.html" class="text-white text-3xl font-bold">Nostra</a></h1>
+        </div>
+
+        <h3 class="mt-3 text-xl font-medium text-center text-gray-600 dark:text-gray-200">Welcome Back</h3>
+
+        <p class="mt-1 text-center text-gray-500 dark:text-gray-400">Login or create account</p>
+
+        <form>
+            <div class="w-full mt-4">
+                <input class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-500 bg-white border rounded-lg dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-blue-300" type="email" placeholder="Email Address" aria-label="Email Address" />
+            </div>
+
+            <div class="w-full mt-4">
+                <input class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-500 bg-white border rounded-lg dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-blue-300" type="password" placeholder="Password" aria-label="Password" />
+            </div>
+
+            <div class="flex items-center justify-between mt-4">
+                <a href="#" class="text-sm text-gray-600 dark:text-gray-200 hover:text-gray-500">Forget Password?</a>
+
+                <button class="px-6 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50 " >
+                   <a href="./index.html">Login</a> 
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <div class="flex items-center justify-center py-4 text-center bg-gray-50 dark:bg-gray-700">
+        <span class="text-sm text-gray-600 dark:text-gray-200">Don't have an account? </span>
+
+        <a href="./signup.html" class="mx-2 text-sm font-bold text-blue-500 dark:text-blue-400 hover:underline">Sign up</a>
+    </div>
+</div>

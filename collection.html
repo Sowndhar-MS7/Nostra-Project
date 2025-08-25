@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!--Navbar-->
+
+   <nav id="navbar"class="bg-wheatshadow-xl sticky top-0 z-10 shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      
+      <!-- Logo -->
+      <div class="text-2xl font-bold text-black">Nostra</div>
+
+       <div>
+            <input type="text" placeholder="What are you looking for.." class="input  flex md:flex hidden ">
+        </div>
+      
+      <!-- Menu (Desktop) -->
+      <ul class="hidden md:flex space-x-8 text-gray-700 font-medium">
+        <li><a href="./index.html" class="hover:text-blue-600">Home</a></li>
+        <li><a href="./collection.html" class="hover:text-blue-600">Collection</a></li>
+        <li><a href="./contact.html" class="hover:text-blue-600">Contact</a></li>
+        <li>
+          <a href="./signin.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+            Sign in
+          </a>
+        </li>
+      </ul>
+
+      <!-- Mobile Menu Icon -->
+      <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+        <!-- SVG Hamburger -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+      <a href="./index.html" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+      <a href="./collection.html" class="block py-2 text-gray-700 hover:text-blue-600">Collection</a>
+      <a href="./contact.html" class="block py-2 text-gray-700 hover:text-blue-600">Contact</a>
+      <a href="./signin.html" class="block py-2 bg-blue-600 text-white rounded-lg px-4 py-2 mt-2 hover:bg-blue-700">Sign in</a>
+    </div>
+  </nav>
+
+  <script>
+    // Toggle Mobile Menu
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+
+    <!--collections-->
+
+    <div>
+        <h1 class="text-center p-5 text-2xl font-bold">Collections</h1>
+
+
+        <section class="text-center p-4">
+            <h1 id="saree"class="font-bold text-3xl">Sarees</h1>
+            <div class="grid grid-cols-2 md:grid-cols-4 mt-6 gap-5">
+                <div>
+                    <img src="./Images/Maincollections/maincollection1.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>lehenga style saree</h1>
+                    <p>₹ 1999</p>
+                </div>
+                <div><img src="./Images/Saree collections/Saree01.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Banasari silk saree</h1>
+                    <p>₹ 1999</p>
+                </div>
+                <div>
+                    <img src="./Images/Saree collections/Saree02.png
+                " alt="" class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Kanchipuram silk saree</h1>
+                    <p>₹ 1999</p>
+                </div>
+                <div>
+                    <img src="./Images/Saree collections/Saree03.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Mysore silk saree</h1>
+                    <p>₹ 1999</p>
+                </div>
+                <div>
+                    <img src="./Images/Saree collections/Saree04.png
+                " alt="" class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Marriage traditional saree</h1>
+                    <p>₹ 1999</p>
+                </div>
+                <div>
+                    <img src="./Images/Saree collections/Saree05.png
+                " alt="" class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>White golden saree</h1>
+                    <p>₹ 1999</p>
+                </div>
+
+                <div>
+                    <img src="./Images/Saree collections/Saree06.png
+                " alt="" class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Light pink saree</h1>
+                    <p>₹ 1999</p>
+                </div>
+
+                <div>
+                    <img src="./Images/Saree collections/Saree08.png
+                " alt="" class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Blue with black border saree</h1>
+                    <p>₹ 1999</p>
+                </div>
+            </div>
+            <div>
+                <p class="p-10"><a href="#"
+                        class="font-bold p-5 bg-white inline transform hover:-translate-x-2 hover:shadow-2xl">See
+                        More</a></p>
+            </div>
+        </section>
+
+
+
+        <section class="text-center p-4">
+            <h1 class="font-bold text-3xl">Womens T-Shirts</h1>
+            <div class="grid grid-cols-2 md:grid-cols-4 mt-6 gap-5">
+                <div>
+                    <img src="./Images/T-Shirts/T-Shirts01.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Black printed T-Shirt</h1>
+                    <p>₹ 599</p>
+                </div>
+                <div><img src="./Images/T-Shirts/T-Shirts02.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Brand Brown T-Shirt</h1>
+                    <p>₹ 599</p>
+                </div>
+                <div>
+                    <img src="./Images/T-Shirts/T-Shirts03.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Back printed T-Shirt</h1>
+                    <p>₹ 599</p>
+                </div>
+                <div>
+                    <img src="./Images/T-Shirts/T-Shirts04.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Logo White T-Shirt</h1>
+                    <p>₹ 599</p>
+                </div>
+                <div>
+                    <img src="./Images/T-Shirts/T-Shirts05.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>White stylish T-Shirt</h1>
+                    <p>₹ 599</p>
+                </div>
+                <div>
+                    <img src="./Images/T-Shirts/T-Shirts06.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>White with Pink printed T-Shirt</h1>
+                    <p>₹ 599</p>
+                </div>
+
+                <div>
+                    <img src="./Images/T-Shirts/T-Shirts07.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Duo T-Shirt</h1>
+                    <p>₹ 599</p>
+                </div>
+
+                <div>
+                    <img src="./Images/T-Shirts/T-Shirts08.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>White Printed T-Shirt</h1>
+                    <p>₹ 599</p>
+                </div>
+
+            </div>
+            <div>
+                <p class="p-10"><a href="#"
+                        class="font-bold p-5 bg-white inline transform hover:-translate-x-2 hover:shadow-2xl">See
+                        More</a>
+                </p>
+            </div>
+
+        </section>
+
+        <section class="text-center p-4">
+            <h1 class="font-bold text-3xl">Kids Dresses</h1>
+            <div class="grid grid-cols-2 md:grid-cols-4 mt-6 gap-5">
+                <div>
+                    <img src="./Images/KIds Dresses/Kidsdress01.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Frock Dress</h1>
+                    <p>₹ 999</p>
+                </div>
+                <div><img src="./Images/KIds Dresses/Kidsdress02.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Princess Costume Dress</h1>
+                    <p>₹ 999</p>
+                </div>
+                <div>
+                    <img src="./Images/KIds Dresses/Kidsdress03.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Casual Floral Frock Dress</h1>
+                    <p>₹ 999</p>
+                </div>
+                <div>
+                    <img src="./Images/KIds Dresses/Kidsdress04.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Kids Denin Shirt</h1>
+                    <p>₹ 999</p>
+                </div>
+                <div>
+                    <img src="./Images/KIds Dresses/Kidsdress05.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Kids Denim Shirt</h1>
+                    <p>₹ 999</p>
+                </div>
+                <div>
+                    <img src="./Images/KIds Dresses/Kidsdress06.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Casual Twin Frock Dress</h1>
+                    <p>₹ 999</p>
+                </div>
+
+                <div>
+                    <img src="./Images/KIds Dresses/Kidsdress07.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Baby Romper Dress</h1>
+                    <p>₹ 999</p>
+                </div>
+
+                <div>
+                    <img src="./Images/KIds Dresses/Kidsdress08.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Princess Dress</h1>
+                    <p>₹ 999</p>
+                </div>
+
+            </div>
+            <div>
+                <p class="p-10"><a href="#"
+                        class="font-bold p-5 bg-white inline transform hover:-translate-x-2 hover:shadow-2xl">See
+                        More</a>
+                </p>
+            </div>
+
+        </section>
+
+              <section class="text-center p-4">
+            <h1 class="font-bold text-3xl">Mens Shirts</h1>
+            <div class="grid grid-cols-2 md:grid-cols-4 mt-6 gap-5">
+                <div>
+                    <img src="./Images/Mens Shirts/MensShirts01.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Casuals Shirts</h1>
+                    <p>₹ 1199</p>
+                </div>
+                <div><img src="./Images/Mens Shirts/MensShirts02.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Formals Dress</h1>
+                    <p>₹ 1199</p>
+                </div>
+                <div>
+                    <img src="./Images/Mens Shirts/MensShirts03.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1> Printed shirt with Scarf</h1>
+                    <p>₹ 1199</p>
+                </div>
+                <div>
+                    <img src="./Images/Mens Shirts/MensShirts04.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Floral design Stripes Dress</h1>
+                    <p>₹ 1199</p>
+                </div>
+                <div>
+                    <img src="./Images/Mens Shirts/MensShirts05.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Floral design Stripes with cap</h1>
+                    <p>₹ 1199</p>
+                </div>
+                <div>
+                    <img src="./Images/Mens Shirts/MensShirts06.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Perfect Formals Shirts</h1>
+                    <p>₹ 1199</p>
+                </div>
+
+                <div>
+                    <img src="./Images/Mens Shirts/MensShirts07.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Checked Shirt</h1>
+                    <p>₹ 1199</p>
+                </div>
+
+                <div>
+                    <img src="./Images/Mens Shirts/MensShirts08.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>OTTO White shirt </h1>
+                    <p>₹ 1199</p>
+                </div>
+
+            </div>
+            <div>
+                <p class="p-10"><a href="#"
+                        class="font-bold p-5 bg-white inline transform hover:-translate-x-2 hover:shadow-2xl">See
+                        More</a>
+                </p>
+            </div>
+
+        </section>
+
+              <section class="text-center p-4">
+            <h1 class="font-bold text-3xl">Mens T-Shirts</h1>
+            <div class="grid grid-cols-2 md:grid-cols-4 mt-6 gap-5">
+                <div>
+                    <img src="./Images/Mens T-shirts/Mens  T-shirts01.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Duo white printed T-Shirt</h1>
+                    <p>₹ 799</p>
+                </div>
+                <div><img src="./Images/Mens T-shirts/Mens  T-shirts02.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Black Printed T-Shirt</h1>
+                    <p>₹ 799</p>
+                </div>
+                <div>
+                    <img src="./Images/Mens T-shirts/Mens  T-shirts03.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Funny Comics printed T-Shirt</h1>
+                    <p>₹ 799</p>
+                </div>
+                <div>
+                    <img src="./Images/Mens T-shirts/Mens  T-shirts04.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Mild pink T-Shirt</h1>
+                    <p>₹ 799</p>
+                </div>
+                <div>
+                    <img src="./Images/Mens T-shirts/Mens  T-shirts05.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1></h1>Grey T-Shirt
+                    <p>₹ 799</p>
+                </div>
+                <div>
+                    <img src="./Images/Mens T-shirts/Mens  T-shirts06.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Plane Black T-Shirt</h1>
+                    <p>₹ 799</p>
+                </div>
+
+                <div>
+                    <img src="./Images/Mens T-shirts/Mens  T-shirts07.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Pizza Logo Printed T-Shirt</h1>
+                    <p>₹ 799</p>
+                </div>
+
+                <div>
+                    <img src="./Images/Mens T-shirts/Mens  T-shirts08.png" alt=""
+                        class="inline transform hover:-translate-y-2 hover:shadow-2xl">
+                    <h1>Mild Grey T-Shirt</h1>
+                    <p>₹ 799</p>
+                </div>
+
+            </div>
+            <div>
+                <p class="p-10"><a href="#"
+                        class="font-bold p-5 bg-white inline transform hover:-translate-x-2 hover:shadow-2xl">See
+                        More</a>
+                </p>
+            </div>
+
+        </section>
+    </div>
+</body>
+</html>
+       
+
+
+
+
+
+        

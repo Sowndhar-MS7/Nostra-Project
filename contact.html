@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nostra</title>
+
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!--Navbar-->
+
+  <nav id="navbar"class="bg-wheatshadow-xl sticky top-0 z-10 shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      
+      <!-- Logo -->
+      <div class="text-2xl font-bold text-black">Nostra</div>
+
+       <div>
+            <input type="text" placeholder="What are you looking for.." class="input  flex md:flex hidden ">
+        </div>
+      
+      <!-- Menu (Desktop) -->
+      <ul class="hidden md:flex space-x-8 text-gray-700 font-medium">
+        <li><a href="./index.html" class="hover:text-blue-600">Home</a></li>
+        <li><a href="./collection.html" class="hover:text-blue-600">Collection</a></li>
+        <li><a href="./contact.html" class="hover:text-blue-600">Contact</a></li>
+        <li>
+          <a href="./signin.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+            Sign in
+          </a>
+        </li>
+      </ul>
+
+      <!-- Mobile Menu Icon -->
+      <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+        <!-- SVG Hamburger -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+      <a href="./index.html" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+      <a href="./collection.html" class="block py-2 text-gray-700 hover:text-blue-600">Collection</a>
+      <a href="./contact.html" class="block py-2 text-gray-700 hover:text-blue-600">Contact</a>
+      <a href="./signin.html" class="block py-2 bg-blue-600 text-white rounded-lg px-4 py-2 mt-2 hover:bg-blue-700">Sign in</a>
+    </div>
+  </nav>
+
+  <script>
+    // Toggle Mobile Menu
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+
+
+  <!--Contacts Forms-->
+
+  <div class="min-h-screen bg-wheat py-6 flex flex-col justify-center sm:py-12">
+    <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+        <div
+            class="absolute inset-0 bg-gradient-to-r from-indigo-700 to-purple-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl">
+        </div>
+        <div class="text-white relative px-4 py-10 bg-indigo-400 shadow-lg sm:rounded-3xl sm:p-20">
+
+            <div class="text-center pb-6">
+                <h1 class="text-3xl">Contact Us!</h1>
+
+                <p class="text-gray-300">
+                    If you are looking for any diiferent collection.
+                </p>
+            </div>
+
+       <form action="https://fabform.io/f/{form-id}" method="post">
+
+                <input
+                        class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        type="text" placeholder="Name" name="name">
+
+                <input
+                        class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        type="email" placeholder="Email" name="email">
+
+                <input
+                        class="shadow mb-4 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        type="text" placeholder="What collection looking for?" name="_subject">
+
+                <textarea
+                        class="shadow mb-4 min-h-0 appearance-none border rounded h-64 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        type="text" placeholder="Type your message here..." name="message" style="height: 121px;"></textarea>
+
+                <div class="flex justify-between">
+                    <input
+                        class="shadow bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        type="submit" value="Send ➤">
+                    <input
+                        class="shadow bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        type="reset">
+                </div>
+<a href="" class="font-medium text-black dark:text-black hover:underline">Or click here to reveal our protected email address</a>
+    
+            </form>
+        </div>
+        
+    </div>
+</div>
